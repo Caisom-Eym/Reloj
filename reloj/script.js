@@ -1,27 +1,5 @@
 /* Reloj */
-const agujaH = document.querySelector(".aguja-hora")
-const agujaM = document.querySelector(".aguja-minutos")
-const agujaS = document.querySelector(".aguja-segundos")
-var fecha = new Date()
-
-let horaPrev = fecha.getHours()
-let minutoPrev = fecha.getMinutes()
-let segundoPrev = fecha.getSeconds()
-let hora = 0;
-let minuto = 0;
-let segundo = 0;
-let minutoBar = 0;
-
-
-const horario = ()=>{
-    (horaPrev > 12) ? hora = horaPrev - 12
-                    : hora = horaPrev
-    minuto = minutoPrev
-    segundo = segundoPrev
-}
-
-const reloj = ()=> {
-    fecha = new Date()
+consoleHora()
     horaPrev = fecha.getHours()
     minutoPrev = fecha.getMinutes()
     segundoPrev = fecha.getSeconds()
